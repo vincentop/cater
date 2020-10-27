@@ -1,0 +1,350 @@
+@import url(reset.css);
+@import url(nav.css);
+@import url(formbox.css);
+
+/*====================================================*/
+/*===                   主體樣式                     ==*/
+/*====================================================*/
+
+@font-face {
+  font-family: 'Anton', '源泉圓體', 'jf open 粉圓 1.1';
+  src: url(font/Anton-Regular.ttf);
+  src: url(font/GenSenRounded-R.ttc);
+  src: url(font/jf-openhuninn-1.1.ttf);
+}
+
+body {
+  background-color: #fff5ec;
+  font-family: '源泉圓體';
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffecda;
+  /* font-family: '源泉圓體'; */
+  /* font-family: 'jf open 粉圓 1.1';  */
+}
+
+.header {
+  width: 100%;
+}
+
+/*====================================================*/
+/*===                   按鈕樣式                     ==*/
+/*====================================================*/
+
+.button {
+  /* background-color: #4CAF50;  */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  /* margin: 4px 2px; */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: '源泉圓體';
+  border-radius: 10px;
+}
+
+.button1 {
+  background-color: #ff9a76; 
+  border: 2px solid #ff9a76;
+  color: white; 
+}
+
+.button1:hover {
+  background-color: white; 
+  color: black;
+  border: 2px solid #ff9a76;
+}
+
+/*====================================================*/
+/*===                   標題樣式                     ==*/
+/*====================================================*/
+
+.boxTitle {
+  text-align: center;
+  /* padding-top: 40px; */
+}
+
+.boxTitle_column {
+  text-align: center;
+}
+
+.boxTitle h1 {
+  color: #679b9b;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.boxTitle h3 {
+  color: #75a2d7;
+  /* font-size: 1.4em; */
+  font-weight: normal;
+  
+}
+
+.boxTitle_column h1 {
+  color: #679b9b;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.boxTitle_column h3 {
+  color: #75a2d7;
+  /* font-size: 1.4em; */
+  font-weight: normal;
+  /* padding-top: 20px; */
+}
+
+
+/*====================================================*/
+/*===                   特色區塊                     ==*/
+/*====================================================*/
+
+
+.features {
+  background-color: #fff;
+  /* padding-bottom: 20px; */
+  padding: 40px;
+}
+
+.featuresList{
+  padding-top: 20px;
+}
+
+.featuresList ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.featuresList ul li {
+  width: 20%;
+}
+
+.featuresList img {
+  /* display: inline-block; */
+  width: 72px;
+  /* height: 72px; */
+}
+
+.featuresList .iconTitle {
+  display: flex;
+  border-bottom: 5px solid #75a2d8;
+}
+
+.featuresList .iconTitle span {
+  align-self: center;
+  margin: 0 auto;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #d4a5a5;
+}
+
+.featuresList p {
+  padding:20px 0;
+  line-height: 1.2em;
+  text-align:justify;
+}
+
+
+/*====================================================*/
+/*===                   服務區塊                     ==*/
+/*====================================================*/
+
+
+.service{
+  background-color: #ffecda;
+  /* padding-bottom: 20px; */
+  padding: 40px;
+}
+
+.serviceList{
+  padding-top: 20px;
+}
+
+.serviceList ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.serviceList ul li{
+  margin-bottom: 20px;
+}
+
+.serviceList .textBoxR{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding-top: 6px;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-bottom: 3px;
+  background-color: rgba(97, 39, 0, 0.6);
+  border-radius: 5px;
+}
+
+.serviceList .textBoxL{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding-top: 6px;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-bottom: 3px;
+  background-color: rgba(97, 39, 0, 0.6);
+  border-radius: 5px;
+}
+
+.serviceList .textBoxR span,.textBoxL span{
+  color:#fbb03b
+}
+
+.serviceList .boarding{
+  width: 250px;
+  position: relative;
+}
+
+.serviceList .boarding img{
+ border-radius: 10px;
+}
+
+.serviceList .boarding a{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f9ffea;
+}
+
+.serviceList .goorming {
+  width: 250px;
+  position: relative;
+}
+
+.serviceList .goorming img{
+  border-radius: 10px;
+}
+
+.serviceList .goorming a{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f9ffea;
+}
+
+.serviceList .sitter {
+  width: 250px;
+  position: relative;
+}
+
+.serviceList .sitter img{
+  border-radius: 10px;
+}
+
+.serviceList .sitter a{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f9ffea;
+}
+
+.serviceList .pickup {
+  width: 250px;
+  position: relative;
+}
+
+.serviceList .pickup img{
+  border-radius: 10px;
+}
+
+.serviceList .pickup a{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #f9ffea;
+}
+
+/*====================================================*/
+/*===                   關於區塊                     ==*/
+/*====================================================*/
+
+.about{
+  background: url(../images/shutterstock_555591097-1900x800.jpg)center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* min-height: 300px;  */
+}
+
+.about .bgOpacity{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #d4a5a5a9;
+  padding: 60px 60px;
+}
+
+.about .aboutText{
+  max-width: 30%;
+}
+
+.about h1{
+  color: white;
+}
+
+/*====================================================*/
+/*===                   相簿區塊                     ==*/
+/*====================================================*/
+
+.photos {
+  padding: 40px;
+}
+
+.photos .lightBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.photos .lightBox a{
+  padding-bottom: 20px;
+}
+
+/*====================================================*/
+/*===                   預約區塊                     ==*/
+/*====================================================*/
+
+.booking{
+  background: url(../images/pexels-ruca-souza-1049764.jpg)center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* min-height: 300px;  */
+}
+
+.booking .bgOpacity{
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  background-color: #d4a5a5a9;
+  padding: 60px 60px;
+}
+
+.booking h1{
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .featuresList ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .featuresList ul li {
+    width: 50%;
+  }
+}

@@ -1,0 +1,166 @@
+/*====================================================*/
+/*==                    NAV區塊                     ==*/
+/*====================================================*/
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.432);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+  }
+  
+  .nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    /* background-color:rgba(255, 255, 255, 0.281);; */
+    /* float: right; */
+  }
+  
+  .nav li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 20px;
+    /* border-right: 1px solid #f4f4f4; */
+    text-decoration: none;
+    color: #f4f4f4;
+    
+  }
+  
+  .nav li a:hover, .nav .menu-btn:hover {
+    background-color: #55555570;
+  }
+
+  .nav .logo{
+    padding: 20px 20px;
+  }
+  
+  .nav .logo a{
+    display: block;
+    float: left;
+    /* font-size: 2em; */
+    /* padding: 10px 20px; */
+    /* text-decoration: none; */
+    background-image: url(../images/Cater_logo_s.svg);
+    width: 102px;
+    height: 62px;
+    background-size: contain;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space:nowrap;
+  }
+  
+/*====================================================*/
+/*==                    MENU區塊                    ==*/
+/*====================================================*/
+  
+  .nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  
+/*====================================================*/
+/*==                    MENU Icon  區塊             ==*/
+/*====================================================*/
+  
+  .nav .menu-icon {
+    cursor: pointer;
+    /* display: inline-block; */
+    /* float: right; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    /* position: relative; */
+    user-select: none;
+  }
+  
+  .nav .menu-icon .navicon {
+    background: #777;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 30px;
+  }
+  
+  .nav .menu-icon .navicon:before, .nav .menu-icon .navicon:after {
+    background: #777;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  
+  .nav .menu-icon .navicon:before {
+    top: 7px;
+  }
+  
+  .nav .menu-icon .navicon:after {
+    top: -7px;
+  }
+  
+/*====================================================*/
+/*==                    MENU Btm  區塊              ==*/
+/*====================================================*/
+  
+  .nav .menu-btn {
+    display: none;
+  }
+  
+  .nav .menu-btn:checked~.menu {
+    max-height: 410px;
+  }
+  
+  .nav .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .nav .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .nav .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before, .nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+/*====================================================*/
+/*==                     RWD 區塊                   ==*/
+/*====================================================*/
+  
+  @media (min-width: 768px) {
+    .nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0px;
+    }
+    .nav li {
+      float: left;
+    }
+    .nav li a {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .nav .menu {
+      /* clear: none; */
+      /* float: right; */
+      display: flex;
+      max-height: none;
+    }
+    .nav .menu-icon {
+      display: none;
+    }
+  }
