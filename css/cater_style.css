@@ -8,10 +8,11 @@
 /*====================================================*/
 
 @font-face {
-  font-family: 'Anton', '源泉圓體', 'jf open 粉圓 1.1';
+  font-family: 'Anton', '源泉圓體';
   src: url(font/Anton-Regular.ttf);
   src: url(font/GenSenRounded-R.ttc);
-  src: url(font/jf-openhuninn-1.1.ttf);
+  /* src: url(font/jf-openhuninn-1.1.ttf); */
+  /*'jf open 粉圓 1.1'*/
 }
 
 body {
@@ -281,7 +282,7 @@ body {
 /*====================================================*/
 
 .about{
-  background: url(../images/shutterstock_555591097-1900x800.jpg)center center no-repeat;
+  background: url(../images/bg_about.jpg)center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
   /* min-height: 300px;  */
@@ -332,23 +333,15 @@ body {
 /*====================================================*/
 
 .booking{
-  background: url(../images/pexels-ruca-souza-1049764.jpg)center center no-repeat;
+  background: url(../images/bg_booking.jpg)center center no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /* min-height: 300px;  */
 }
 
 .booking .bgOpacity{
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
   background-color: #8d6363a8;
   padding: 60px 60px;
 }
-
-/* .booking h1{
-  color: white;
-} */
 
 /*====================================================*/
 /*===                   評價區塊                     ==*/
@@ -358,6 +351,24 @@ body {
   padding: 40px 0;
 }
 
+/*====================================================*/
+/*===                   聯繫區塊                     ==*/
+/*====================================================*/
+
+.contact{
+  background: url(../images/bg_contact.jpg)center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contact .bgOpacity{
+  background-color: #8d6363a8;
+  padding: 60px 60px;
+}
+
+/*====================================================*/
+/*===                RWD斷點設定                     ==*/
+/*====================================================*/
 
 
 @media screen and (max-width: 600px) {
@@ -377,5 +388,10 @@ body {
     text-align: justify;
     padding: 30px 0;
   }
-
+  .mySlides ul {
+    flex-direction: column;
+  }
+  .mySlides .quoteText {
+    align-items: center;
+  }
 }

@@ -1,18 +1,4 @@
-@import url(css/reset.css);
-@font-face {
-    font-family: 'Anton', '源泉圓體', 'jf open 粉圓 1.1';
-    src: url(font/Anton-Regular.ttf);
-    src: url(font/GenSenRounded-R.ttc);
-    src: url(font/jf-openhuninn-1.1.ttf);
-}
-
-body {
-    font-family: '源泉圓體';
-    margin: 0
-}
-
 .slideshow-container {
-    /* background: #f1f1f1f1; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,16 +6,15 @@ body {
 
 .mySlides {
     /* display: none; */
-    padding: 50px;
+    padding: 50px 50px 10px 50px;
 }
 
 .mySlides img {
     border-radius: 50%;
-    width: 200px;
+    max-width: 200px;
 }
 
 .mySlides p {
-    /* text-align: center; */
     padding-left: 10px;
 }
 
@@ -39,10 +24,14 @@ body {
 }
 
 .mySlides .quoteText {
-    width: 400px;
+    max-width: 400px;
+    height: 120px;
     margin: 20px;
     line-height: 1.2em;
     font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .mySlides .quoteText q {
