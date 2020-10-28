@@ -1,6 +1,7 @@
 @import url(reset.css);
 @import url(nav.css);
 @import url(formbox.css);
+@import url(quotes.css);
 
 /*====================================================*/
 /*===                   主體樣式                     ==*/
@@ -22,8 +23,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffecda;
-  /* font-family: '源泉圓體'; */
-  /* font-family: 'jf open 粉圓 1.1';  */
 }
 
 .header {
@@ -66,26 +65,22 @@ body {
 /*===                   標題樣式                     ==*/
 /*====================================================*/
 
-.boxTitle {
+.boxTitle,.boxTitle_column,.boxTitle_column2 {
   text-align: center;
   /* padding-top: 40px; */
 }
 
-.boxTitle_column {
-  text-align: center;
-}
-
-.boxTitle h1 {
-  color: #679b9b;
+.boxTitle_row h1 {
+  color: #ffffff;
   font-size: 1.4em;
   font-weight: bold;
   padding-top: 10px;
 }
 
-.boxTitle h3 {
+.boxTitle_row h3 {
   color: #75a2d7;
   /* font-size: 1.4em; */
-  font-weight: normal;
+  font-weight: bold;
   
 }
 
@@ -97,9 +92,23 @@ body {
 }
 
 .boxTitle_column h3 {
-  color: #75a2d7;
+  color: #f0a51a;
   /* font-size: 1.4em; */
-  font-weight: normal;
+  font-weight: bold;
+  /* padding-top: 20px; */
+}
+
+.boxTitle_column2 h1 {
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.boxTitle_column2 h3 {
+  color: #f0a51a;
+  /* font-size: 1.4em; */
+  font-weight: bold;
   /* padding-top: 20px; */
 }
 
@@ -282,12 +291,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #d4a5a5a9;
+  background-color: #8d6363a8;
   padding: 60px 60px;
 }
 
 .about .aboutText{
   max-width: 30%;
+  line-height: 1.4em;
+  color: rgb(255, 255, 255);
+  text-align: justify;
 }
 
 .about h1{
@@ -330,13 +342,23 @@ body {
   /* display: flex; */
   /* align-items: center; */
   /* justify-content: space-around; */
-  background-color: #d4a5a5a9;
+  background-color: #8d6363a8;
   padding: 60px 60px;
 }
 
-.booking h1{
+/* .booking h1{
   color: white;
+} */
+
+/*====================================================*/
+/*===                   評價區塊                     ==*/
+/*====================================================*/
+
+.rank {
+  padding: 40px 0;
 }
+
+
 
 @media screen and (max-width: 600px) {
   .featuresList ul {
@@ -347,4 +369,13 @@ body {
   .featuresList ul li {
     width: 50%;
   }
+  .about .bgOpacity{
+    flex-direction: column;
+  }
+  .about .aboutText{
+    max-width: 80%;
+    text-align: justify;
+    padding: 30px 0;
+  }
+
 }

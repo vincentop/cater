@@ -1,0 +1,100 @@
+@import url(css/reset.css);
+@font-face {
+    font-family: 'Anton', '源泉圓體', 'jf open 粉圓 1.1';
+    src: url(font/Anton-Regular.ttf);
+    src: url(font/GenSenRounded-R.ttc);
+    src: url(font/jf-openhuninn-1.1.ttf);
+}
+
+body {
+    font-family: '源泉圓體';
+    margin: 0
+}
+
+.slideshow-container {
+    /* background: #f1f1f1f1; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mySlides {
+    /* display: none; */
+    padding: 50px;
+}
+
+.mySlides img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.mySlides p {
+    /* text-align: center; */
+    padding-left: 10px;
+}
+
+.mySlides ul {
+    display: flex;
+    align-items: center;
+}
+
+.mySlides .quoteText {
+    width: 400px;
+    margin: 20px;
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+
+.mySlides .quoteText q {
+    font-style: italic;
+    text-align: justify;
+}
+
+.mySlides .author {
+    color: cornflowerblue;
+}
+
+.prev, .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+.prev {
+    border-radius: 0 4px 4px 0;
+}
+
+.next {
+    border-radius: 4px 0 0 4px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
