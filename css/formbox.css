@@ -4,7 +4,7 @@
 }
 
 .formGroup {
-    width: 50%;
+    width: 40%;
     margin: 20px;
 }
 
@@ -17,21 +17,21 @@ h2.heading {
     margin-bottom: 20px;
 }
 
-.controls {
+.formCtrl {
     position: relative;
 }
 
-.controls input[type="text"],
-.controls input[type="email"],
-.controls input[type="datetime-local"],
-.controls input[type="tel"],
-.controls textarea,
-.controls select {
+.formCtrl input[type="text"],
+.formCtrl input[type="email"],
+.formCtrl input[type="datetime-local"],
+.formCtrl input[type="tel"],
+.formCtrl textarea,
+.formCtrl select {
     padding: 12px;
     border: 0px solid #c6c6c6;
     width: 100%;
     margin-bottom: 18px;
-    font-family: 'Lato', 'sans-serif';
+    /* font-family: 'Lato', 'sans-serif'; */
     font-size: 1em;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -44,71 +44,88 @@ h2.heading {
     font-family: '源泉圓體';
 }
 
-.controls textarea {
-    height: 109px;
+.formCtrl textarea {
+    height: 105px;
+    resize: none;
 }
 
-.controls select {
+#contact_comments {
+    height: 130px;
+    resize: none;
+}
+
+.formCtrl select {
     -moz-appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
 }
 
-.controls input[type="text"]:focus,
-.controls input[type="text"]:hover,
-.controls input[type="email"]:focus,
-.controls input[type="email"]:hover,
-.controls input[type="number"]:focus,
-.controls input[type="number"]:hover,
-.controls input[type="datetime-local"]:focus,
-.controls input[type="datetime-local"]:hover,
-.controls input[type="tel"]:focus,
-.controls input[type="tel"]:hover,
-.controls textarea:focus,
-.controls textarea:hover,
-.controls button:focus,
-.controls button:hover,
-.controls select:focus,
-.controls select:hover {
+.formCtrl input[type="text"]:focus,
+.formCtrl input[type="text"]:hover,
+.formCtrl input[type="email"]:focus,
+.formCtrl input[type="email"]:hover,
+.formCtrl input[type="number"]:focus,
+.formCtrl input[type="number"]:hover,
+.formCtrl input[type="datetime-local"]:focus,
+.formCtrl input[type="datetime-local"]:hover,
+.formCtrl input[type="tel"]:focus,
+.formCtrl input[type="tel"]:hover,
+.formCtrl textarea:focus,
+.formCtrl textarea:hover,
+.formCtrl button:focus,
+.formCtrl button:hover,
+.formCtrl select:focus,
+.formCtrl select:hover {
     outline: none;
     /* border-color: #9FB1C1; */
 }
 
-.controls input[type="text"]:focus+label,
-.controls input[type="text"]:hover+label,
-.controls input[type="email"]:focus+label,
-.controls input[type="email"]:hover+label,
-.controls input[type="tel"]:focus+label,
-.controls input[type="tel"]:hover+label,
-.controls input[type="datetime-local"]:focus+label,
-.controls input[type="datetime-local"]:hover+label,
-.controls textarea:focus+label,
-.controls textarea:hover+label,
-.controls button:focus+label,
-.controls button:hover+label,
-.controls select:focus+label,
-.controls select:hover+label {
-    color: #bdcc00;
+.formCtrl input[type="text"]:focus+label,
+.formCtrl input[type="text"]:hover+label,
+.formCtrl input[type="email"]:focus+label,
+.formCtrl input[type="email"]:hover+label,
+.formCtrl input[type="tel"]:focus+label,
+.formCtrl input[type="tel"]:hover+label,
+.formCtrl input[type="datetime-local"]:focus+label,
+.formCtrl input[type="datetime-local"]:hover+label,
+.formCtrl textarea:focus+label,
+.formCtrl textarea:hover+label,
+.formCtrl button:focus+label,
+.formCtrl button:hover+label,
+.formCtrl select:focus+label,
+.formCtrl select:hover+label {
+    color: #cc5c00;
     cursor: text;
 }
 
+.formCtrl input:-webkit-autofill,
+.formCtrl input:-webkit-autofill:hover,
+.formCtrl input:-webkit-autofill:focus,
+.formCtrl input:-webkit-autofill:active {
+    /*淡淡的白*/
+    /* -webkit-box-shadow: 0 0 0px 1000px rgba(192,192,192,0.2) inset;  */
+    /*透明*/
+    transition: background-color 5000s ease-in-out 0s; 
+    /*字體顏色*/
+    /* -webkit-text-fill-color: #fff;  */
+}
 
-
-.controls label {
+.formCtrl label {
     position: absolute;
     left: 8px;
     top: 12px;
     padding: 4px 10px;
+    border-radius: 2px;
     -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
     -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
     -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
     transition: color 0.3s, top 0.3s, background-color 0.8s;
 }
 
-.controls label.active {
+.formCtrl label.active {
     top: -13px;
-    color: #555;
-    background-color: white;
+    color: rgb(61, 158, 31);
+    background-color: rgb(255, 255, 255);
 }
 
 button {
@@ -138,11 +155,17 @@ input[name="bookingTime"].full::-webkit-datetime-edit-fields-wrapper {
     font-family: '源泉圓體';
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .formBox {
         flex-direction: column;
         align-items: center;
     }
+    .formGroup {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 414px) {
     .formGroup {
         width: 80%;
     }
