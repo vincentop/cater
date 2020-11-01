@@ -8,8 +8,10 @@
 /*====================================================*/
 
 @font-face {
-  font-family: 'Anton', '源泉圓體';
-  src: url(font/Anton-Regular.ttf);
+  font-family: '源泉圓體';
+  /* font-family: 'Anton', '源泉圓體'; */
+  /* font-family: 'Anton', '源泉圓體','jf open 粉圓 1.1'; */
+  /* src: url(font/Anton-Regular.ttf); */
   src: url(font/GenSenRounded-R.ttc);
   /* src: url(font/jf-openhuninn-1.1.ttf); */
   /*'jf open 粉圓 1.1'*/
@@ -17,7 +19,7 @@
 
 body {
   background-color: #fff5ec;
-  font-family: '源泉圓體';
+  font-family: '源泉圓體','微軟正黑體';
 }
 
 .wrap {
@@ -299,6 +301,7 @@ body {
   line-height: 1.4em;
   color: rgb(255, 255, 255);
   text-align: justify;
+  font-size: 1.2em;
 }
 
 .about h1 {
@@ -324,6 +327,10 @@ body {
 
 .photos .lightBox a {
   padding-bottom: 20px;
+}
+
+.photos .lightBox a img{
+  border-radius: 10px;
 }
 
 /*====================================================*/
@@ -440,7 +447,7 @@ body {
 }
 
 .leftLogo .caterBlogo {
-  background-image: url(../images/bottom_logo.svg);
+  background-image: url(../images/logo/bottom_logo.svg);
   width: 147px;
   height: 70px;
   text-indent: 101%;
@@ -455,19 +462,19 @@ body {
 }
 
 .rightLogo .fblogo {
-  background-image: url(../images/social_logo_fb.svg);
+  background-image: url(../images/icon/social_fb.svg);
   width: 60px;
   height: 60px;
 }
 
 .rightLogo .iglogo {
-  background-image: url(../images/social_logo_ig.svg);
+  background-image: url(../images/icon/social_ig.svg);
   width: 60px;
   height: 60px;
 }
 
 .rightLogo .twitterlogo {
-  background-image: url(../images/social_logo_twitter.svg);
+  background-image: url(../images/icon/social_twitter.svg);
   width: 60px;
   height: 60px;
 }
@@ -528,6 +535,7 @@ body {
 
   .about .bgOpacity {
     flex-direction: column;
+    padding: 60px 30px;
   }
 
   .about .aboutText {

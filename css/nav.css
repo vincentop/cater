@@ -17,8 +17,6 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    /* background-color:rgba(255, 255, 255, 0.281);; */
-    /* float: right; */
   }
   
   .nav li a {
@@ -26,7 +24,6 @@
     flex-direction: column;
     align-items: center;
     padding: 12px 20px;
-    /* border-right: 1px solid #f4f4f4; */
     text-decoration: none;
     color: #f4f4f4;
     
@@ -43,10 +40,7 @@
   .nav .logo a{
     display: block;
     float: left;
-    /* font-size: 2em; */
-    /* padding: 10px 20px; */
-    /* text-decoration: none; */
-    background-image: url(../images/Cater_logo_s.svg);
+    background-image: url(../images/logo/Cater_logo_s.svg);
     width: 102px;
     height: 62px;
     background-size: contain;
@@ -71,13 +65,10 @@
   
   .nav .menu-icon {
     cursor: pointer;
-    /* display: inline-block; */
-    /* float: right; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px 20px;
-    /* position: relative; */
     user-select: none;
   }
   
@@ -155,8 +146,6 @@
       text-align: center;
     }
     .nav .menu {
-      /* clear: none; */
-      /* float: right; */
       display: flex;
       max-height: none;
     }
