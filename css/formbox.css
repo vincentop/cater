@@ -148,14 +148,13 @@ button:hover {
 
 .formCtrl input[type="datetime-local"]::-webkit-datetime-edit-fields-wrapper {
     visibility: hidden;
-    font-family: '源泉圓體';
 }
 
-.formCtrl input[type="datetime-local"].empty::-webkit-datetime-edit-fields-wrapper {
+/* .formCtrl input[type="datetime-local"].empty::-webkit-datetime-edit-fields-wrapper {
     visibility: hidden;
     font-family: '源泉圓體';
+} */
 
-}
 .formCtrl input[type="datetime-local"].full::-webkit-datetime-edit-fields-wrapper {
     visibility: visible;
     font-family: '源泉圓體';
