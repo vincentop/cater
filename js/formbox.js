@@ -3,6 +3,6 @@ $("input[name='bookingTime']").on("input",function(){
     if($(this).val().length>0){
         $(this).addClass("full");
     }else{
-        $(this).removeClass("full");
+        $(this).removeClass();
     }
 });
