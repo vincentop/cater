@@ -148,8 +148,14 @@ button:hover {
 
 input[name="bookingTime"]::-webkit-datetime-edit-fields-wrapper {
     visibility: hidden;
+    font-family: '源泉圓體';
 }
 
+input[name="bookingTime"].empty::-webkit-datetime-edit-fields-wrapper {
+    visibility: hidden;
+    font-family: '源泉圓體';
+    
+}
 input[name="bookingTime"].full::-webkit-datetime-edit-fields-wrapper {
     visibility: visible;
     font-family: '源泉圓體';
