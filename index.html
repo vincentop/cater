@@ -383,6 +383,7 @@
       </div>
     </div>
   </div>
+  
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
@@ -392,10 +393,19 @@
   <script src="js/menu.js"></script>
   <script src="js/scrollPage.js"></script>
   <script src="js/formLabel.js"></script>
-  <script src="js/formBox.js"></script>
+  <!-- <script src="js/formBox.js"></script> -->
   <script src="js/quotes.js"></script>
   <script src="js/sweetalert.min.js"></script>
   <script src="js/popup.js"></script>
+  <script>
+    $("input[type='datetime-local']").on("input",function(){
+    if($(this).val().length>0){
+        $(this).addClass("full");
+    }else{
+        $(this).removeClass("full");
+    }
+});
+  </script>
 </body>
 
 </html>
