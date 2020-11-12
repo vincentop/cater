@@ -1,0 +1,112 @@
+/*====================================================*/
+/*===                   price樣式                     ==*/
+/*====================================================*/
+
+.flex-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.flex-div .box-up {
+	display: flex;
+	justify-content: space-around;
+	/* margin: 20px 0; */
+}
+
+.box-up .flex-article {
+	width: 30%;
+	margin: 20px 0;
+	text-align: center;
+	border-radius: 15px;
+	border: solid 2px #A6D0E4;
+	box-shadow: 2px 2px 30px hsla(0, 0%, 0%, 0.14);
+}
+
+.flex-article ul li:first-child {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.flex-article .pointText{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: orangered;
+}
+
+.flex-article .pointText2{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: orangered;
+}
+
+.box-up .flex-article img {
+	border: 2px solid #FFF;
+	margin: 20px auto;
+	width: 90%;
+	height: auto;
+	/* max-width: 184px; */
+	box-shadow: 2px 2px 30px hsla(0, 0%, 0%, 0.24);
+}
+
+.box-up .flex-article ul li {
+	border-bottom: solid 1px #A6D0E4;
+	padding: 10px 0;
+}
+
+.box-up .flex-article ul li:last-child {
+	border-bottom: 0px;
+}
+
+.box-up .flex-article ul .price {
+	background-color: #fff;
+}
+
+.box-up .flex-article a {
+	margin: 10px 50px;
+	display: block;
+	color: #B15151;
+	border: solid 2px #D4A5A5;
+	border-radius: 10px;
+	padding: 15px;
+	box-shadow: 0.1px 0.1px 30px hsla(0, 0%, 0%, 0.10);
+}
+
+.box-up .flex-article a:hover {
+	color: floralwhite;
+	background-color: rgb(255, 168, 118);
+	box-shadow: 1px 1px 30px hsla(0, 0%, 0%, 0.0);
+}
+
+
+
+.box-bottom {
+	width: 75%;
+	margin: 20px auto;
+	border-radius: 15px;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 30px hsla(0, 0%, 0%, 0.24);
+	text-align: center;
+}
+
+.box-bottom h1 {
+	font-size: 1.8em;
+	padding: 15px 0;
+}
+
+.box-bottom h3 {
+	font-size: 1.2em;
+	padding: 15px 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.flex-div .box-up {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.box-up .flex-article {
+		width: 80%;
+	}
+}

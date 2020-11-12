@@ -1,0 +1,164 @@
+/* @import url(reset.css);
+@import url(cater_style.css); */
+
+
+/*====================================================*/
+/*===                   catGrooming樣式              ==*/
+/*====================================================*/
+
+
+.catGrooming {
+	/* background-color: #FFF; */
+	display: flex;
+	flex-direction: column;
+}
+
+.catGroomingTop {
+	background-color: #FFECDA;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px 0;
+}
+
+.Top_man,
+.Top_ask,
+.Top_save,
+.Top_env,
+.Top_natural,
+.Top_protect {
+	margin: 10px auto;
+	width: 40%;
+	background-color: #FFF;
+	border: 3px dotted #ff8614;
+	display: flex;
+	align-items: center;
+}
+
+.catGrooming_img {
+	width: 20%;
+	margin: 15px;
+}
+
+.catGrooming_text {
+	width: 80%;
+	letter-spacing: 2px;
+	margin: 15px;
+}
+
+.catGrooming_text h1 {
+	font-size: 1.2em;
+	line-height: 2em;
+	font-weight: bold;
+	color: deeppink;
+}
+
+/*===================PRICE=====================*/
+
+.catGrooming_type {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	/* padding: 20px; */
+}
+
+.basePrice,
+.mediumPrice,
+.exPrice {
+	/* border: 1px solid #D4A5A5; */
+	margin: 20px auto;
+	width: 30%;
+	border-radius: 15px;
+	border: solid 2px #A6D0E4;
+	box-shadow: 2px 2px 30px hsla(0, 0%, 0%, 0.14);
+}
+
+.catGrooming_type ul li {
+	padding: 10px 0;
+	border-bottom: solid 1px #A6D0E4;
+}
+
+.catGrooming_type ul li:last-child {
+	border-bottom: 0px;
+}
+
+.catGrooming_type .pointText{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: orangered;
+}
+
+.catGrooming_type h1 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.catGrooming_price_price {
+	height: 25px;
+}
+
+.catGrooming_price_p {
+	height: 45px;
+	border-top: 2px dotted #A6D0E4;
+	letter-spacing: 4px;
+}
+
+.catGrooming_price_green {
+	height: 45px;
+	border-top: 2px dotted #A6D0E4;
+	background-color: #F9FFEA;
+	letter-spacing: 2px;
+}
+
+.basePrice a,
+.mediumPrice a,
+.exPrice a {
+	display: block;
+	color: #B15151;
+	border: 2px solid #D4A5A5;
+	border-radius: 10px;
+	margin: 10px 50px;
+	padding: 15px;
+	box-shadow: 0.1px 0.1px 30px hsla(0, 0%, 0%, 0.10);
+}
+
+.basePrice a:hover,
+.mediumPrice a:hover,
+.exPrice a:hover {
+	color: floralwhite;
+	background-color: rgb(255, 168, 118);
+	box-shadow: 1px 1px 30px hsla(0, 0%, 0%, 0.0);
+}
+
+
+@media only screen and (max-width: 600px) {
+	.catGrooming_type {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.basePrice,
+	.mediumPrice,
+	.exPrice {
+		width: 80%;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.catGroomingTop {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+
+	.Top_man,
+	.Top_ask,
+	.Top_save,
+	.Top_env,
+	.Top_natural,
+	.Top_protect {
+		width: 80%;
+	}
+	
+}

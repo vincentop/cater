@@ -1,0 +1,44 @@
+.container{
+    width: 100%;
+}
+
+.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    /* box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2); */
+}
+
+.tabs li.current{
+    background: #ffffff;
+    color: #222;
+    box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content{
+    display: none;
+    padding: 15px;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    .tabs li{
+        font-size: 1em;
+        padding: 10px 10px;
+    }
+
+}

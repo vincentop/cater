@@ -1,0 +1,101 @@
+.teamBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.teamRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.teamWord h1 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2em;
+    color: rgb(211, 109, 68);
+}
+
+.teamWord {
+    width: 80%;
+    line-height: 1.2em;
+    text-align: justify;
+    background-color: rgb(255, 208, 169);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.teamWord p {
+    padding: 5px 0;
+}
+
+.teamWord p:nth-child(2), .teamWord p:nth-child(3), .teamWord p:nth-child(4) {
+    text-indent: 32px;
+}
+
+.teamColumn {
+    width: 40%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color:  rgb(255, 208, 169);
+}
+
+.card img {
+    border-radius: 15px;
+}
+
+.teamContainer {
+    padding: 10px 16px;
+    line-height: 1.2em;
+}
+
+.teamContainer p:nth-child(3) {
+    text-align: justify;
+}
+
+.teamContainer p:nth-child(4) {
+    padding: 10px;
+}
+
+.teamContainer button {
+    border-radius: 10px;
+}
+
+.teamTitle {
+    color: grey;
+}
+
+.teamButton {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(145, 77, 38);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.teamButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: darkorange;
+}
+
+@media screen and (max-width: 650px) {
+    .teamColumn {
+        width: 100%;
+    }
+
+    .teamRow {
+        flex-direction: column;
+    }
+}
