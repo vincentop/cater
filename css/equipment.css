@@ -22,12 +22,13 @@
 }
 
 .publicity_box {
-  width: 45%;
+  width: 40%;
   height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
-  border: 3px dotted rgb(185, 101, 101);
+  justify-content: center;
+  border: 1px solid rgb(185, 101, 101);
   background-color: #FFF;
 }
 

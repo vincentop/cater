@@ -33,7 +33,7 @@
 }
 
 .teamWord p:nth-child(2), .teamWord p:nth-child(3), .teamWord p:nth-child(4) {
-    text-indent: 32px;
+    /* text-indent: 32px; */
 }
 
 .teamColumn {
