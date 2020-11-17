@@ -207,7 +207,7 @@ body {
 .service {
   background-color: #ffecda;
   /* padding-bottom: 20px; */
-  padding: 40px;
+  padding: 40px 40px 0px 40px;
 }
 
 .serviceList {
@@ -314,6 +314,26 @@ body {
 }
 
 /*====================================================*/
+/*===                   影片區塊                     ==*/
+/*====================================================*/
+
+.catVideo{
+  padding: 20px 20px;
+}
+
+.catVideo .videoBox{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.videoBox iframe{
+  border-radius:20px;
+  width: 80%;
+  height: 450px;
+}
+
+/*====================================================*/
 /*===                   關於區塊                     ==*/
 /*====================================================*/
 
@@ -344,6 +364,7 @@ body {
 .about h1 {
   color: white;
 }
+
 
 /*====================================================*/
 /*===                   相簿區塊                     ==*/
@@ -542,11 +563,15 @@ body {
   .ctBoxR {
     width: 100%;
     padding: 20px 0 0 0;
-
   }
 
   .booking .bgOpacity {
     padding: 60px 0;
+  }
+
+  .videoBox iframe{
+    width: 95%;
+    height: 400px;
   }
 }
 
@@ -625,5 +650,10 @@ body {
   .leftLogo .caterBlogo {
     width: 108px;
     height: 50px;
+  }
+
+  .videoBox iframe{
+    width: 95%;
+    height: 250px;
   }
 }

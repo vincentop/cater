@@ -131,18 +131,20 @@ h2.heading {
 button {
     width: 100%;
     cursor: pointer;
-    background-color: #1b3d4d;
+    background-color: #ff9a76;
     border: none;
     color: #fff;
     padding: 12px 0;
-    font-size: 1em;
+    font-size: 1.2em;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 5px;
+    font-family: '源泉圓體';
 }
 
 button:hover {
-    background-color: #224c60;
+    background-color: white;
+  color: black;
 }
 
 
