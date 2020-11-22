@@ -682,6 +682,7 @@ figure.effect-chico p {
 	-webkit-transform: scale(1.5);
   transform: scale(1.5);
   font-size: 1.5em;
+  line-height:1.2em;
 }
 
 figure.effect-chico:hover figcaption::before,
